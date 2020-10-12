@@ -1,0 +1,332 @@
+body{
+    font-family: calibri, arial, sans-serif;
+    font-size: 1.2em;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+
+body header{
+    z-index: 1;
+    background-color:white;
+    position: sticky;
+    top: 0px;
+}
+
+.my-header span{
+    float: right;
+    font-size: 1.2em
+}
+
+
+body header a{
+    text-decoration:none;
+    border-bottom: solid transparent;
+    transition: border-bottom .5s, color .5s;
+  
+}
+
+
+
+div.space{
+    word-spacing: 50px;
+    display: inline;
+    
+}
+.my-header{
+    padding: 20px;
+    font-family: calibri;
+}
+
+
+
+body header a{
+    color: lightgray;
+    
+}
+
+.not-active{
+    display: inline;
+   
+}
+
+
+
+a.active {
+    font-weight: bold;
+    color: black;
+
+}
+
+header a:hover{
+    color: black;
+    border-bottom: 1px solid black;
+    
+}
+
+
+
+
+#marathon{
+    border-radius: 10%;
+}
+
+.hi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 300px;
+}
+
+.smile{
+    size: x=800 y=200;
+}
+
+.pic{
+    margin-right: 10px;
+}
+
+
+
+
+
+.projects{
+    padding: 50px;
+    background-color: rgb(235, 249, 250);
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+span.titles h2{
+    margin-top:0px
+
+}
+.projects img{
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.projects .nyr{
+    transition: opacity .5s, transform .5s ease-in-out;
+}
+
+.projects .nyr:hover{
+    opacity: 60%;
+    transform: scale(1.02);
+}
+
+
+
+
+
+.work{
+    margin-bottom:50px;
+    padding: 30px;
+    background-color: rgb(235, 249, 250);
+    border-radius: 10px 10px 10px 10px;
+}
+.work span.date{
+    color:rgb(185, 185, 185);
+}
+.work span.job{
+    font-size: 1.15em;
+}
+.work a{
+    text-decoration: none;
+    color: black;
+    border-bottom: solid transparent;
+    transition: border-bottom .5s ease-in-out;
+}
+.work a:hover{
+    border-bottom: 1px solid black;
+}
+.read-more-state {
+    display: none;
+}
+  
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .1s ease;
+}
+  
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+  
+.read-more-state ~ .read-more-trigger:before {
+    content: 'Read more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Read less';
+}
+  
+.read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #666;
+    line-height: 1;
+    font-size: .9em;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+    transition: border.5s, color .5s;
+}
+.read-more-trigger:hover {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color:black;
+    line-height: 1;
+    font-size: .9em;
+    border: 1px solid black;
+    border-radius: .25em;
+}
+
+
+
+
+
+.class-work{
+    margin-bottom:50px;
+    padding: 30px;
+    background-color: rgb(235, 249, 250);
+    border-radius: 10px 10px 10px 10px;
+}
+.class-work span.date{
+    color:rgb(185, 185, 185);
+}
+.class-work span.job{
+    font-size: 1.15em;
+}
+.class-work a{
+    text-decoration: none;
+    color: black;
+    border-bottom: solid transparent;
+    transition: border-bottom .5s ease-in-out;
+}
+.class-work a:hover{
+    border-bottom: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+.intro{
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.intro a{
+    text-decoration: none;
+    color: black;
+}
+.intro a:hover{
+    text-decoration: underline;
+}
+
+#profile{
+    padding-bottom: 20px;
+}
+
+.me{
+    padding-top: 25px;
+}
+.me #mailicon{
+    transition: transform .5s ease-in-out;
+    width: 50px;
+    height: auto;
+}
+.me #mailicon:hover{
+    opacity: 60%;
+    transform: scale(1.1);
+}
+.me #linkedinicon{
+    padding-left:10px;
+    transition: transform .5s ease-in-out;
+    width: 50px;
+    height: auto;
+}
+.me #linkedinicon:hover{
+    opacity: 60%;
+    transform: scale(1.1);
+}
+.upper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.animation{
+    padding-top:130px;
+}
+.proficient{
+    font:"Courier New";
+    font-size: 40px;
+    margin-right: 2px;
+}
+.typewrite{
+    text-decoration: none;
+    font: "Courier New";
+    color:mediumturquoise;
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-form{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    margin-top: 50px;
+    
+}
+.form-control{
+    width:600px;
+    background-color: gainsboro;
+    margin-bottom: 16px;
+}
+
+input{
+    height: 45px;
+}
+
+form.submit{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 40px;
+}
+
+form .submit:hover{
+    background-color:rgb(48, 48, 48);
+    color: white;
+}
