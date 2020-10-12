@@ -5,12 +5,24 @@ body{
     padding-right: 250px;
 }
 
-
+#upup{
+    min-width: 900px;
+}
+#upper-lim{
+    min-width:900px;
+}
+#intro{
+    min-width:900px;
+}
+#projects{
+    min-width: 900px;
+}
 body header{
     z-index: 1;
     background-color:white;
     position: sticky;
     top: 0px;
+    min-width: 1000px;
 }
 
 .my-header span{
@@ -79,6 +91,11 @@ header a:hover{
 
 .smile{
     size: x=800 y=200;
+    padding-left: 10px;
+}
+#biog{
+    padding-left:10px;
+    width:400px;
 }
 
 .pic{
@@ -125,6 +142,7 @@ span.titles h2{
     padding: 30px;
     background-color: rgb(235, 249, 250);
     border-radius: 10px 10px 10px 10px;
+    min-width: 900px;
 }
 .work span.date{
     color:rgb(185, 185, 185);
@@ -197,6 +215,7 @@ span.titles h2{
     padding: 30px;
     background-color: rgb(235, 249, 250);
     border-radius: 10px 10px 10px 10px;
+    min-width: 900px;
 }
 .class-work span.date{
     color:rgb(185, 185, 185);
@@ -214,25 +233,28 @@ span.titles h2{
     border-bottom: 1px solid black;
 }
 #eight{
-    width:70%;
+    width:700px;
     padding-bottom: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    min-width: 500px;
 }
 #botany{
-    width:70%;
+    width:700px;
     padding-bottom: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    min-width: 500px;
 }
 #motorcycle{
-    width:60%;
+    width:600px;
     padding-bottom: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    min-width: 500px;
 }
 
 
@@ -318,7 +340,7 @@ span.titles h2{
 
 
 
-
+/*
 .contact-form{
     position: relative;
     display: block;
@@ -349,3 +371,4 @@ form .submit:hover{
     background-color:rgb(48, 48, 48);
     color: white;
 }
+*/
