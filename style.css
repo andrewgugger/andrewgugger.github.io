@@ -3,13 +3,14 @@ body{
     font-size: 1.2em;
     padding-left: 250px;
     padding-right: 250px;
+    min-width: 900px;
 }
 
 #upup{
     min-width: 900px;
 }
 #upper-lim{
-    min-width:900px;
+    min-width:1000px;
 }
 #intro{
     min-width:900px;
