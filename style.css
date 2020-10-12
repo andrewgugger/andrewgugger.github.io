@@ -213,8 +213,27 @@ span.titles h2{
 .class-work a:hover{
     border-bottom: 1px solid black;
 }
-
-
+#eight{
+    width:70%;
+    padding-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#botany{
+    width:70%;
+    padding-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#motorcycle{
+    width:60%;
+    padding-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
