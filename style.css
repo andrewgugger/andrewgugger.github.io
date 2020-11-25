@@ -10,10 +10,13 @@ body{
     min-width: 900px;
 }
 #upper-lim{
-    min-width:1000px;
+    min-width:900px;
 }
 #intro{
     min-width:900px;
+}
+#resu{
+    min-width: 900px;
 }
 #projects{
     min-width: 900px;
@@ -48,7 +51,7 @@ div.space{
 }
 .my-header{
     padding: 20px;
-    font-family: calibri;
+    font-family: calibri, arial, sans-serif;
 }
 
 
@@ -132,6 +135,15 @@ span.titles h2{
 .projects .nyr:hover{
     opacity: 60%;
     transform: scale(1.02);
+}
+.projects .project_description a{
+    text-decoration: none;
+    color: black;
+    border-bottom: solid transparent;
+    transition: border-bottom .5s ease-in-out;
+}
+.projects .project_description a:hover{
+    border-bottom: 1px solid black;
 }
 
 
@@ -259,8 +271,22 @@ span.titles h2{
 }
 
 
+.res{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
 
-
+.res a{
+    text-decoration: none;
+    color: black;
+}
+.res a:hover{
+    text-decoration: underline;
+}
 
 
 
@@ -325,8 +351,6 @@ span.titles h2{
     color:mediumturquoise;
     font-size: 40px;
 }
-
-
 
 
 
