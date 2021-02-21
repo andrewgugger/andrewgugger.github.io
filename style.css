@@ -1,32 +1,40 @@
 body{
     font-family: calibri, arial, sans-serif;
     font-size: 1.2em;
-    padding-left: 250px;
-    padding-right: 250px;
-    min-width: 1100;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-right:auto;
+    margin-left:auto;
+    min-width: 800px;
+    max-width:1200px;
 }
 
 #upup{
-    min-width: 900px;
+    min-width: 500;
+    max-width:1200px;
 }
 #upper-lim{
-    min-width:1100px;
+    min-width: 500;
+    max-width:1200px;
 }
 #intro{
-    min-width:900px;
+    min-width: 500;
+    max-width:1200px;
 }
 #resu{
-    min-width: 900px;
+    min-width: 500;
+    max-width:1200px;
 }
 #projects{
-    min-width: 900px;
+    min-width: 500;
+    max-width:1200px;
 }
+
 body header{
     z-index: 1;
     background-color:white;
     position: sticky;
     top: 0px;
-    min-width: 1000px;
 }
 
 .my-header span{
@@ -155,7 +163,8 @@ span.titles h2{
     padding: 30px;
     background-color: rgb(235, 249, 250);
     border-radius: 10px 10px 10px 10px;
-    min-width: 900px;
+    min-width: 500;
+    max-width:1200px;
 }
 .work span.date{
     color:rgb(185, 185, 185);
@@ -228,7 +237,8 @@ span.titles h2{
     padding: 30px;
     background-color: rgb(235, 249, 250);
     border-radius: 10px 10px 10px 10px;
-    min-width: 900px;
+    min-width: 500;
+    max-width:1200px;
 }
 .class-work span.date{
     color:rgb(185, 185, 185);
@@ -251,7 +261,8 @@ span.titles h2{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    min-width: 500px;
+    min-width: 500;
+    max-width:1200px;
 }
 #botany{
     width:700px;
@@ -259,7 +270,8 @@ span.titles h2{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    min-width: 500px;
+    min-width: 500;
+    max-width:1200px;
 }
 #motorcycle{
     width:600px;
@@ -267,7 +279,8 @@ span.titles h2{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    min-width: 500px;
+    min-width: 500;
+    max-width:1200px;
 }
 
 
@@ -308,10 +321,14 @@ span.titles h2{
 
 #profile{
     padding-bottom: 20px;
+    width: 60%;
+    max-width: 300px;
+
 }
 
 .me{
     padding-top: 25px;
+    max-width:1200px;
 }
 .me #mailicon{
     transition: transform .5s ease-in-out;
@@ -339,17 +356,18 @@ span.titles h2{
 }
 .animation{
     padding-top:130px;
+    max-width:1200px;
 }
 .proficient{
     font:"Courier New";
-    font-size: 40px;
+    font-size: 36px;
     margin-right: 2px;
 }
 .typewrite{
     text-decoration: none;
     font: "Courier New";
     color:mediumturquoise;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 
