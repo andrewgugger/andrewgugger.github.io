@@ -1,2 +1,2 @@
-# guggera.github.io
+# andrewgugger.github.io
 Resume website
