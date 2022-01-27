@@ -353,6 +353,17 @@ span.titles h2{
     opacity: 60%;
     transform: scale(1.1);
 }
+.me #giticon{
+    padding-left:10px;
+    padding-bottom: 5px;
+    transition: transform .5s ease-in-out;
+    width: 40px;
+    height: auto;
+}
+.me #giticon:hover{
+    opacity: 60%;
+    transform: scale(1.1);
+}
 .upper{
     display: grid;
     grid-template-columns: 1fr 1fr;
